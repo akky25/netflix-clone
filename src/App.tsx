@@ -2,10 +2,12 @@ import { FC } from "react";
 
 import "./App.css";
 import Row from "components/row";
+import Banner from "components/Banner";
 import requests from "./request";
 
 const App: FC = () => (
   <div className="App">
+    <Banner />
     <Row
       title="NETFLIX ORIGUINALS"
       fetchUrl={requests.feachNetflixOriginals}
